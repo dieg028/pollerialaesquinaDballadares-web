@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>La esquina D’Balladares</title>
+    </head>
+    <body>
+     <header class="header-principal">
+        <div class="logo">
+            <h1>Pollería <span>La esquina D’Balladares</span></h1>
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>   
+        <main>
+             <div class="inicio-texto">
+
+                <h2>El mejor pollo a la brasa de la ciudad</h2>
+
+                <p>
+                    Disfruta de nuestro delicioso pollo a la brasa,
+                    preparado con ingredientes seleccionados y acompañado
+                    de papas crocantes y ensalada fresca.
+                </p>
+        </main>
+         
+         <section id="menu">
+
+            <h2>Nuestro Menú</h2>
+
+            <div class="productos">
+
+                <article class="producto">
+
+                    <img
+                        src="image/entero.jpg"
+                        alt="Pollo a la brasa">
+
+                    <h3>Pollo a la Brasa</h3>
+
+                    <p>1 pollo + papas + ensalada + cremas.</p>
+
+                    <span class="precio">S/ 55.00</span>
+
+                </article>
+                
+                <article class="producto">
+
+                    <img
+                        src="image/medio.jpg" alt="Medio pollo">
+
+                    <h3>1/2 Pollo</h3>
+
+                    <p>Medio pollo + papas + ensalada + cremas.</p>
+
+                    <span class="precio"> S/ 32.00</span>
+
+                </article>
+
+                <article class="producto">
+
+                    <img src="image/cuarto.jpg" alt="Cuarto de pollo">
+                    <h3>1/4 de Pollo</h3>
+
+                    <p>Cuarto de pollo + papas + ensalada.</p>
+
+                    <span class="precio">S/ 18.00</span>
+
+                </article>
+                
+                <article class="producto">
+
+                    <img
+                        src="image/familiar.jpg" alt="Combo familiar">
+
+                    <h3>Combo Familiar</h3>
+
+                    <p>1 pollo + papas + ensalada + gaseosa de 1.5 L.</p>
+
+                    <span class="precio">S/ 65.00</span>
+
+                </article>
+
+            </div>
+
+        </section>
+                <h2>Horario de Atención</h2>
+
+          <table border="1">
+          <tr><th>Día</th> <th>Horario</th></tr>          
+          <tr><td>Lunes a Viernes</td><td>5:00 pm - 11:00 pm</td></tr>
+
+          <tr> <td>Sábado y Domingo</td> <td>4:00 pm - 12:00 am</td> </tr>
+          </table>
+        
+        <section id="nosotros">
+
+            <h2>Sobre Nosotros</h2>
+
+            <p> Somos una pollería dedicada a ofrecer los mejores
+                pollos a la brasa para nuestros clientes.</p>
+
+            <p> Nuestro objetivo es brindar productos de calidad,
+                buena atención y un ambiente agradable para toda
+                la familia.</p>
+             <img
+                src="image/balladares1.png"
+                alt="Nuestro local"
+                class="imagen-local">
+         </section>
+
+        <section id="multimedia">
+
+            <h2>Multimedia</h2>
+            <p> Conoce un poco más de nuestra pollería.</p>
+            <h3>Audio promocional</h3>
+
+            <audio controls>
+                <source src="audio/musica.mp3" type="audio/mpeg"></audio>
+            <h3>Video promocional</h3>
+
+            <video controls width="200">
+                <source src="video/video.mp4" type="video/mp4"> </video>
+        </section>
+         <section id="pedidos">
+
+            <h2>Realiza tu Pedido</h2>
+
+            <form>
+               <label 
+                   for="nombre">Nombre:
+               </label>
+                <input type="text" id="nombre" name="nombre" tetxNombre="Ingrese su nombre" required>
+
+                <label for="telefono"> Teléfono:
+                </label>
+                <input type="tel" id="telefono" name="telefono textTelefono="Ingrese su teléfono" required>
+
+                <label for="correo">
+                    Correo:
+                </label> 
+                <input type="email" id="correo" name="correo" textEmail="escribe tu correo">
+                
+                 </label>
+
+                <select id="producto" name="producto">
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="pollo">Pollo entero</option>
+                    <option value="medio">Medio pollo </option>
+                    <option value="cuarto">Cuarto de pollo</option>
+                    <option value="combo">Combo familiar</option>
+
+                </select>
+
+                <label for="cantidad">Cantidad:
+                </label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="20" value="1">
+
+                <p>Tipo de entrega:</p>
+
+                <div class="opciones">
+                     <input type="radio" id="delivery" name="entrega" value="delivery">
+                <label for="delivery">Delivery
+                </label>
+                       <input type="radio" id="recojo" name="entrega" value="recojo">
+                 <label for="recojo">
+                        Recojo en tienda
+                    </label>
+
+                </div>
+                <label for="direccion">
+                    Dirección:
+                </label>
+
+                <input type="text" id="direccion" name="direccion" textDireccion="Ingrese su dirección" required> 
+
+                <label for="comentario">
+                    Indicaciones adicionales:
+                </label>
+                <textarea id="comentario" name="comentario" rows="5"
+                          textComentario="Escriba un comentario">
+                </textarea>
+
+                <input type="submit" value="Realizar pedido" class="boton-formulario">
+                <input type="reset" value="limpiar">
+            </form>
+
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p> Dirección: Circunvalacion_marcavelica_piura</p>
+            <p>Teléfono:944 330206 </p>
+            <p>Correo: laesquinaDballadares@gmail.com</p>            
+            <p> También puedes visitarnos en<a href="https://www.facebook.com/p/La-esquina-dballadares-100067562174435/"
+                                               target="_blank">Facebook</a></p>
+        </section>
+
+    </main
+    <footer>
+        <p>Todos los derechos reservados.</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+                   
+    </body>
+</html>
